@@ -2,12 +2,12 @@ import React from "react";
 
 import { NextSeo } from 'next-seo';
 
-export default function home({ landingPageData }) {
+export default function home({ props }) {
 	return(
 		<div>
             <NextSeo
                 title="Exmaple Title"
-                description="Descpriton here"
+                description="Description here ..."
             />
             <h1>Hello World</h1>
             {/* Components ... */}
