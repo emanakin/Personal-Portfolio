@@ -10,3 +10,14 @@
   letter-spacing: -0.13688rem;
   margin: 0;
 }
+
+@media (max-width: 900px) {
+  .education h2 {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .education {
+    width: 100%;
+  }
+}

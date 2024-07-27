@@ -74,5 +74,6 @@
 
   .nav {
     align-items: flex-end;
+    padding-bottom: 10px;
   }
 }

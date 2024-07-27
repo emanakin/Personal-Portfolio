@@ -4,25 +4,26 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import styles from '@/styles/components/NavigationComponent.module.css';
 
 const Navigation = ({ setActiveSection, activeSection }) => {
-  const [menuOpen, setMenuOpen] = useState(true);
-  const [isMobile, setIsMobile] = useState();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
 
   const toggleMenu = () => {
-    isMobile ? setMenuOpen(!menuOpen) : null;
+    setMenuOpen((prevState) => !prevState);
   };
 
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 900) {
-        setMenuOpen(true);
-        setIsMobile(false);
-      } else if (window.innerWidth < 900) {
         setMenuOpen(false);
+        setIsMobile(false);
+      } else {
         setIsMobile(true);
       }
     };
 
     window.addEventListener('resize', handleResize);
+
+    handleResize();
 
     return () => {
       window.removeEventListener('resize', handleResize);
