@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  flex-shrink: 5;
+  width: 30%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 45px;
+  transition: height 0.3s ease;
+}
+
+.navigationWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.title {
+  align-self: flex-start;
+  margin-bottom: auto;
+}
+
+@media (max-width: 900px) {
+  .container {
+    height: auto;
+    width: 100%;
+    padding-bottom: 0;
+  }
+
+  .navigationWrapper {
+    flex-direction: row;
+    margin-right: 100px;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,15 @@
+.title h1 {
+  color: var(--Light-Black, #3c3c3c);
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: -0.075rem;
+  margin: 0;
+}
+
+.title h2 {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 100;
+  letter-spacing: -0.0375rem;
+  margin: 0;
+}

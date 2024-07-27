@@ -3,20 +3,16 @@ import { NextSeo } from 'next-seo';
 import LeftContentContainer from '@/components/LeftContentContainer';
 import RightContentContainer from '@/components/RightContentContainer';
 
-export default function Home({}) {
+export default function Education({}) {
   const [activeSection, setActiveSection] = useState('all');
 
   return (
     <>
       <NextSeo
-        title="Emmanuel Akinlosotu | Portfolio"
-        description="Get to learn about my professional experiences!"
+        title="Emmanuel Akinlosotu | Education"
+        description="Explore my educational background"
       />
-      <LeftContentContainer
-        setActiveSection={setActiveSection}
-        activeSection={activeSection}
-      />
-      <RightContentContainer activeSection={activeSection} />
+      <p>Hello world</p>
     </>
   );
 }

@@ -1,0 +1,175 @@
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.9375rem;
+  background: linear-gradient(93deg, #fff 18.83%, #bbbfca 107.04%);
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 35rem;
+  height: 4.5rem;
+  overflow: hidden;
+  position: relative;
+  transition:
+    height 0.4s ease,
+    padding 0.4s ease;
+}
+
+.topContainer {
+  display: flex;
+  width: 100%;
+}
+
+.expanded {
+  padding-bottom: 20px;
+}
+
+.condensed {
+  height: 4.5rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.leftContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.description {
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: -0.0225rem;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.expandedContent {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.subtitle {
+  color: #000;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.03rem;
+  margin: 0px 0px 5px 0px;
+  align-self: flex-start;
+}
+
+.detailsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: -0.0225rem;
+  margin: 0;
+}
+
+.detailIcon {
+  margin-right: 5px;
+  font-size: 0.25rem; /* Adjust size as needed */
+  color: rgba(0, 0, 0, 0.674);
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 80%;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #696969;
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.closeIcon:hover {
+  color: #696969;
+}
+
+.redirect {
+  letter-spacing: -0.01875rem;
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 0.625rem;
+  font-weight: 300;
+  cursor: pointer;
+  text-align: left;
+  padding: 0;
+  transition: color 0.3s;
+}
+
+.redirect:hover {
+  color: #696969;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .rightContainer {
+    margin-left: 5px;
+  }
+}
