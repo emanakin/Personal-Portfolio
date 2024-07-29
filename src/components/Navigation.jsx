@@ -5,7 +5,7 @@ import styles from '@/styles/components/NavigationComponent.module.css';
 
 const Navigation = ({ setActiveSection, activeSection }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 900);
+  const [isMobile, setIsMobile] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen((prevState) => !prevState);
@@ -14,16 +14,17 @@ const Navigation = ({ setActiveSection, activeSection }) => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 900) {
-        setMenuOpen(false);
+        setMenuOpen(true);
         setIsMobile(false);
       } else {
         setIsMobile(true);
+        setMenuOpen(false);
       }
     };
 
-    window.addEventListener('resize', handleResize);
-
     handleResize();
+
+    window.addEventListener('resize', handleResize);
 
     return () => {
       window.removeEventListener('resize', handleResize);

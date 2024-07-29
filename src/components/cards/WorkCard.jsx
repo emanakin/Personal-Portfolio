@@ -15,7 +15,7 @@ const WorkCard = ({ data }) => {
     if (expanded) {
       setHeight(contentRef.current.scrollHeight + 145);
     } else {
-      setHeight('5rem');
+      setHeight('6rem');
     }
   }, [expanded]);
 

@@ -249,12 +249,13 @@
 @media (max-width: 768px) {
   .card {
     width: auto;
-    height: auto;
+    height: 100%;
     padding: 15px;
     margin-bottom: 10px;
   }
 
   .rightContainer {
     margin-left: 5px;
+    justify-content: center;
   }
 }
