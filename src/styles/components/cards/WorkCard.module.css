@@ -249,7 +249,7 @@
 @media (max-width: 768px) {
   .card {
     width: auto;
-    height: 100%;
+    height: fit-content !important;
     padding: 15px;
     margin-bottom: 10px;
   }
