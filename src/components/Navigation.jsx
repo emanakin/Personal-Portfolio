@@ -44,7 +44,6 @@ const Navigation = ({ setActiveSection, activeSection }) => {
         <button
           onClick={() => {
             setActiveSection('all');
-            toggleMenu();
           }}
           className={activeSection === 'all' ? `${styles.active}` : ''}
         >
@@ -53,7 +52,6 @@ const Navigation = ({ setActiveSection, activeSection }) => {
         <button
           onClick={() => {
             setActiveSection('education');
-            toggleMenu();
           }}
           className={activeSection === 'education' ? `${styles.active}` : ''}
         >
@@ -62,7 +60,6 @@ const Navigation = ({ setActiveSection, activeSection }) => {
         <button
           onClick={() => {
             setActiveSection('experience');
-            toggleMenu();
           }}
           className={activeSection === 'experience' ? `${styles.active}` : ''}
         >
@@ -71,7 +68,6 @@ const Navigation = ({ setActiveSection, activeSection }) => {
         <button
           onClick={() => {
             setActiveSection('projects');
-            toggleMenu();
           }}
           className={activeSection === 'projects' ? `${styles.active}` : ''}
         >
