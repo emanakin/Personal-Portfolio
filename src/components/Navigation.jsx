@@ -3,12 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import styles from '@/styles/components/NavigationComponent.module.css';
 
-const Navigation = ({ setActiveSection, activeSection }) => {
+const Navigation = ({ setActiveSection, activeSection, className }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen((prevState) => !prevState);
+    setMenuOpen(!menuOpen);
   };
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Navigation = ({ setActiveSection, activeSection }) => {
 
   return (
     <div
-      className={`${styles.navigationContainer} ${menuOpen ? styles.menuOpen : ''}`}
+      className={`${styles.navigationContainer} ${menuOpen ? styles.menuOpen : ''} ${className || ''}`}
     >
       <FontAwesomeIcon
         icon={menuOpen ? faTimes : faBars}

@@ -6,3 +6,9 @@ body {
   background-color: #e8e8e8;
   overflow: hidden;
 }
+
+/* Add this to hide content before animation */
+.animate-left,
+.animate-right {
+  opacity: 0;
+}

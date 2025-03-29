@@ -4,17 +4,17 @@ import Education from '@/components/sections/Education';
 import WorkExperience from '@/components/sections/WorkExperience';
 import Projects from '@/components/sections/Projects';
 
-const RightContentContainer = ({ activeSection }) => {
+const RightContentContainer = ({ activeSection, className }) => {
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} ${className || ''}`}>
       {(activeSection === 'all' || activeSection === 'education') && (
-        <Education />
+        <Education className="animate-right" />
       )}
       {(activeSection === 'all' || activeSection === 'experience') && (
-        <WorkExperience />
+        <WorkExperience className="animate-right" />
       )}
       {(activeSection === 'all' || activeSection === 'projects') && (
-        <Projects />
+        <Projects className="animate-right" />
       )}
     </div>
   );

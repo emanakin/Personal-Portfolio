@@ -2,6 +2,7 @@ export const civiconnectData = {
   logo: '/images/experience/civiconnect-logo.png',
   company: 'CIVICONNECT',
   location: 'Niagara Ontario, Canada',
+  website: 'https://www.civiconnect.ca',
   description:
     'Contributed to diverse client projects with a focus on design and React-based implementation. Currently enhancing AWS workflows and leveraging analytics to optimize business processes.',
   details: [
@@ -37,6 +38,7 @@ export const opentextData = {
   logo: '/images/experience/opentext-logo.png',
   company: 'OpenText',
   location: 'Waterloo Ontario, Canada',
+  website: 'https://www.opentext.com',
   description:
     'Worked on key Mediator product interface for AWS, GCP, Azure, HashiCorp, and OT applications. Collaborated with the principal developer to bootstrap the Secrets Mediator MVP.',
   details: [
@@ -73,6 +75,7 @@ export const cooperatorsData = {
   logo: '/images/experience/cooperators-logo.png',
   company: 'Co-operators',
   location: 'Waterloo Ontario, Canada',
+  website: 'https://www.cooperators.ca',
   description:
     'Maintained and enhanced two internal business applications, primarily focusing on bug fixes and test cases.',
   details: [
