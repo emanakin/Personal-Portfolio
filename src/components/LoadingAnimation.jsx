@@ -8,22 +8,33 @@ const LoadingAnimation = ({ onComplete }) => {
   const overlayRef = useRef(null);
 
   useEffect(() => {
+    // Create a timeline with a small delay to ensure DOM is ready
     const tl = gsap.timeline({
+      delay: 0.1, // Small delay to ensure everything is rendered
       onComplete: () => {
         if (onComplete) onComplete();
       },
     });
 
-    // Initial setup
-    gsap.set(textRef.current, { y: 20, opacity: 0 });
+    // Initial setup - make sure text is hidden
+    gsap.set(textRef.current, {
+      y: 20,
+      opacity: 0,
+      visibility: 'hidden',
+    });
 
-    // Animation sequence
+    // Animation sequence with no gaps between animations
     tl.to(textRef.current, {
-      duration: 1.2,
-      y: 0,
-      opacity: 1,
-      ease: 'power3.out',
+      duration: 0.1,
+      visibility: 'visible',
+      ease: 'none',
     })
+      .to(textRef.current, {
+        duration: 1.2,
+        y: 0,
+        opacity: 1,
+        ease: 'power3.out',
+      })
       .to(textRef.current, {
         duration: 0.7,
         y: -20,
