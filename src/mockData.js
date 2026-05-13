@@ -1,3 +1,38 @@
+export const scotiabankData = {
+  logo: '/images/experience/Scotiabank-Logo.png',
+  company: 'Scotiabank',
+  location: 'Toronto Ontario, Canada',
+  website: 'https://www.scotiabank.com',
+  description:
+    'Building platform validation and developer infrastructure tooling across Global Platforms Architecture, focused on payment modernization, transaction replay, and AI-enabled developer workflows.',
+  details: [
+    'Built a distributed transaction replay and regression testing platform for an FTM software currency upgrade, processing 1.2M+ payment messages per run to detect behavioral divergence before rollout.',
+    'Supported upgrade readiness for High Value Payments, Wires, and Payment Hub workflows by building validation tooling across IBM MQ, DB2, ACE, and FTM.',
+    'Developed validation workflows to compare payment payloads, DB2 transaction records, and ACE/FTM output behavior across legacy and upgraded environments.',
+    'Architected and deployed a GCP-based POC for an internal developer VM management platform in 3 weeks, enabling Payments teams to build and validate AI-enabled prototypes faster.',
+    'Automated Terraform provisioning, elastic compute templates, scheduling policies, idle-environment controls, and in-house authentication for 60+ developer machines.',
+    'Produced technical documentation, validation workflows, debugging guides, handoff materials, and reusable guidance for transaction replay, regression testing, platform troubleshooting, and AI development workflows.',
+    'Presented implementation plans to senior engineers and principal architects, aligning tooling with enterprise security, access-control, and operational-readiness expectations.',
+  ],
+  roles: [
+    {
+      title: 'Software Engineer II',
+      duration: 'Sept. 2025 - Current',
+    },
+  ],
+  skills: [
+    'GCP',
+    'Terraform',
+    'IBM MQ',
+    'DB2',
+    'ACE',
+    'FTM',
+    'Regression Testing',
+    'Platform Engineering',
+    'Payment Systems',
+  ],
+};
+
 export const civiconnectData = {
   logo: '/images/experience/civiconnect-logo.png',
   company: 'CIVICONNECT',
