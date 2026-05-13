@@ -5,7 +5,7 @@ const TitleComponent = () => {
   return (
     <div className={styles.title}>
       <h1>Emmanuel Akinlosotu</h1>
-      <h2>Software Developer</h2>
+      <h2>Software Engineer</h2>
     </div>
   );
 };

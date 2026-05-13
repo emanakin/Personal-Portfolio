@@ -59,7 +59,7 @@ const LoadingAnimation = ({ onComplete }) => {
       <div ref={overlayRef} className={styles.overlay}></div>
       <div ref={textRef} className={styles.loadingText}>
         <span className={styles.name}>Emmanuel Akinlosotu</span>
-        <span className={styles.title}>Software Developer</span>
+        <span className={styles.title}>Software Engineer</span>
       </div>
     </div>
   );
