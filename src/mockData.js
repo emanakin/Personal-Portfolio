@@ -39,16 +39,16 @@ export const civiconnectData = {
   location: 'Niagara Ontario, Canada',
   website: 'https://www.civiconnect.ca',
   description:
-    'Contributed to diverse client projects with a focus on design and React-based implementation. Currently enhancing AWS workflows and leveraging analytics to optimize business processes.',
+    'Contributed to diverse client projects with a focus on design and React-based implementation. Enhanced AWS workflows and leveraged analytics to optimize business processes.',
   details: [
-    'Developing robust solutions for aggregating client website data via APIs to provide comprehensive analytics and detailed reporting on AWS resource usage and cost optimization.',
+    'Developed robust solutions for aggregating client website data via APIs to provide comprehensive analytics and detailed reporting on AWS resource usage and cost optimization.',
     'Redesigned client websites with React and integrated Strapi CMS, initiating foundational work for AWS resource management and cost-efficiency project.',
     'Acquired AWS fundamentals and employed these skills to design and deploy scalable cloud infrastructure tailored for client needs.',
   ],
   roles: [
     {
       title: 'Backend/Cloud Developer',
-      duration: '12 month Internship • Current',
+      duration: '12 month Internship',
     },
     {
       title: 'Cloud Architect Associate',
